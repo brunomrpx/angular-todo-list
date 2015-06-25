@@ -1,0 +1,38 @@
+.closedTask {
+    text-decoration: line-through;
+}
+
+button {
+    border: 1px solid #000;
+    background-color: #000;
+    color: #fff;
+    cursor: pointer;
+}
+
+input[type="text"] {
+    border: 1px solid #000;
+    padding: 10px;
+}
+
+ul {
+    list-style: none;
+    padding: 0px;
+}
+
+ul > li {
+    border-top: 1px solid #bbb;
+    border-bottom: 1px solid #eee;
+    padding: 15px 0;
+}
+
+button.remove {
+
+}
+
+button.add {
+    padding: 10px 30px;
+}
+
+.right {
+    float: right;
+}

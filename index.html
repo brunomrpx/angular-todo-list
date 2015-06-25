@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Simple TODO List application</title>
+    <link rel="stylesheet" href="src/css/application.css" type="text/css">
+</head>
+<body ng-app="application" ng-controller="TasksController as task">
+    <h1>TODO List</h1>
+    <input type="text" placeholder="Insert new task here" ng-model="task.newTask">
+    <button ng-click="task.add(task.newTask)" class="add">Add</button>
+    <button ng-click="task.removeSelectedTasks()" ng-show="task.taskList.length > 0" class="add">Remove Selecteds</button>
+    <ul>
+        <li ng-repeat="taskItem in task.taskList">
+            <input type="checkbox" ng-model="taskItem.closed">
+            <span ng-class="{ closedTask: taskItem.closed }">{{ taskItem.name }}</span>
+            <button ng-click="task.remove(taskItem)" class="remove right">Remove</button>
+        </li>
+    </ul>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="src/application.module.js"></script>
+    <script src="src/tasks/tasks.controller.js"></script>
+</body>
+</html>

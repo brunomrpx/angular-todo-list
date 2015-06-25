@@ -1,0 +1,19 @@
+{
+  "name": "angular-todo-list",
+  "version": "0.0.0",
+  "authors": [
+    "Bruno Paixão <brunomrpx@gmail.com>"
+  ],
+  "description": "Simple application",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "angular": "~1.4.*"
+  }
+}
